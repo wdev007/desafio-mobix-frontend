@@ -4,24 +4,26 @@ import AppCheckBox from "../../../../../shared/components/checkbox";
 
 const StackCheckboxRoot = () => {
   return (
-    <Box>
-      <Flex justifyContent="space-between">
-        <h2>Todos</h2>
-        <Flex justifyContent="space-between" w="80%">
+    <Box w="100%" padding="0 16px" bg="#EFF1F1">
+      <Flex justifyContent="space-between" w="100%">
+        <Box w="30%">
+          <h2>Todos</h2>
+        </Box>
+        <Flex justifyContent="space-between" w="70%">
           <Flex justifyContent="flex-start" w="10%">
-            <AppCheckBox isCheked={false} handleChange={() => {}} />
+            <AppCheckBox isCheked={true} handleChange={() => {}} />
           </Flex>
           <Flex justifyContent="flex-start" w="10%">
-            <AppCheckBox isCheked={false} handleChange={() => {}} />
+            <AppCheckBox isCheked={true} handleChange={() => {}} />
           </Flex>
           <Flex justifyContent="flex-start" w="10%">
-            <AppCheckBox isCheked={false} handleChange={() => {}} />
+            <AppCheckBox isCheked={true} handleChange={() => {}} />
           </Flex>
           <Flex justifyContent="flex-start" w="10%">
-            <AppCheckBox isCheked={false} handleChange={() => {}} />
+            <AppCheckBox isCheked={true} handleChange={() => {}} />
           </Flex>
           <Flex justifyContent="flex-start" w="10%">
-            <AppCheckBox isCheked={false} handleChange={() => {}} />
+            <AppCheckBox isCheked={true} handleChange={() => {}} />
           </Flex>
         </Flex>
       </Flex>

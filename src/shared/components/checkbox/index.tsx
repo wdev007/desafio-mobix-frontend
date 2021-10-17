@@ -12,7 +12,11 @@ const AppCheckBox: React.FC<IProps> = ({
   handleChange,
 }) => {
   return (
-    <Checkbox isChecked={isCheked} onChange={handleChange} colorScheme="gray">
+    <Checkbox
+      isChecked={isCheked}
+      onChange={handleChange}
+      colorScheme="blackAlpha"
+    >
       {children}
     </Checkbox>
   );

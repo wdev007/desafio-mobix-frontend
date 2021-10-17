@@ -1,26 +1,17 @@
 import React from "react";
-import { Container, GridItem, Grid } from "@chakra-ui/react";
-// import Listing from "./components/listing";
+import { Container } from "@chakra-ui/react";
+// import AppCheckBox from "../../shared/components/checkbox";
+import StackCheckboxRoot from "./components/stackChackbox/root";
+import StackCheckboxParent from "./components/stackChackbox/parent";
 
 const Profiles = () => {
   return (
     <Container maxW="container.xl" centerContent h="100%">
-      {/* <Flex flexDirection="column" w="100%">
-        <h3>Tabela de permissões</h3>
-        <Listing />
-      </Flex> */}
-      <Grid
-        templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(5, 1fr)"
-        gap={4}
-        h="100vh"
-        w="100%"
-      >
-        <GridItem rowSpan={2} colSpan={1} bg="tomato" />
-        <GridItem colSpan={2} bg="papayawhip" />
-        <GridItem colSpan={2} bg="papayawhip" />
-        <GridItem colSpan={4} bg="tomato" />
-      </Grid>
+      <StackCheckboxRoot />
+      <StackCheckboxParent title="Análise" />
+      <StackCheckboxParent title="Contas" />
+      <StackCheckboxParent title="Customização" />
+      <StackCheckboxParent title="Financeiro" />
     </Container>
   );
 };
