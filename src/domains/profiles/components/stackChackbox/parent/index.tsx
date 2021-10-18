@@ -7,154 +7,156 @@ import {
   Box,
   AccordionIcon,
   Flex,
+  Text,
 } from "@chakra-ui/react";
 import AppCheckBox from "../../../../../shared/components/checkbox";
+import StackCheckboxChildren from "../children";
 
-interface IProps {
+interface ISubModule {
   title: string;
 }
 
-const StackCheckboxParent: React.FC<IProps> = ({ title }) => {
+interface IProps {
+  title: string;
+  subModules: ISubModule[];
+}
+
+const StackCheckboxParent: React.FC<IProps> = ({ title, subModules }) => {
   return (
     <Accordion allowToggle w="100%">
       <AccordionItem>
         <h2>
           <AccordionButton bg="#F8F8F8">
-            {/* <Box flex="1" textAlign="left">
-              <Flex>
-                <h2>{title}</h2>
-                <AccordionIcon />
-                <Flex justifyContent="space-between" w="80%">
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={false} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={false} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={false} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={false} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={false} handleChange={() => {}} />
-                  </Flex>
+            <Flex
+              justifyContent="space-between"
+              alignItems="center"
+              w="100%"
+              h="50px"
+            >
+              <Box w="20%">
+                <Flex alignItems="center">
+                  <Text fontSize="xl" fontWeight="bold" marginRight="18px">
+                    {title}
+                  </Text>
+                  <AccordionIcon />
+                </Flex>
+              </Box>
+              <Flex justifyContent="space-between" w="80%">
+                <Flex justifyContent="flex-start" w="15%">
+                  <AppCheckBox isCheked={true} handleChange={() => {}} />
+                </Flex>
+                <Flex justifyContent="flex-start" w="15%">
+                  <AppCheckBox isCheked={true} handleChange={() => {}} />
+                </Flex>
+                <Flex justifyContent="flex-start" w="15%">
+                  <AppCheckBox isCheked={true} handleChange={() => {}} />
+                </Flex>
+                <Flex justifyContent="flex-start" w="15%">
+                  <AppCheckBox isCheked={true} handleChange={() => {}} />
+                </Flex>
+                <Flex justifyContent="flex-start" w="15%">
+                  <AppCheckBox isCheked={true} handleChange={() => {}} />
                 </Flex>
               </Flex>
-            </Box> */}
-            <Box w="100%">
-              <Flex justifyContent="space-between" w="100%">
-                <Box w="30%">
-                  <Flex>
-                    <h2>{title}</h2>
-                    <AccordionIcon />
-                  </Flex>
-                </Box>
-                <Flex justifyContent="space-between" w="70%">
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={true} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={true} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={true} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={true} handleChange={() => {}} />
-                  </Flex>
-                  <Flex justifyContent="flex-start" w="10%">
-                    <AppCheckBox isCheked={true} handleChange={() => {}} />
-                  </Flex>
-                </Flex>
-              </Flex>
-            </Box>
+            </Flex>
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Box w="100%">
-            <Flex justifyContent="space-between" w="100%">
-              <Box w="30%">
-                <Flex>
-                  <h4>Sub modulo 1</h4>
-                </Flex>
-              </Box>
-              <Flex justifyContent="space-between" w="70%">
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-              </Flex>
-            </Flex>
-          </Box>
-          <Box w="100%">
-            <Flex justifyContent="space-between" w="100%">
-              <Box w="30%">
-                <Flex>
-                  <h4>Sub modulo 2</h4>
-                </Flex>
-              </Box>
-              <Flex justifyContent="space-between" w="70%">
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-              </Flex>
-            </Flex>
-          </Box>
-          <Box w="100%">
-            <Flex justifyContent="space-between" w="100%">
-              <Box w="30%">
-                <Flex>
-                  <h4>Sub modulo 3</h4>
-                </Flex>
-              </Box>
-              <Flex justifyContent="space-between" w="70%">
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-                <Flex justifyContent="flex-start" w="10%">
-                  <AppCheckBox isCheked={true} handleChange={() => {}} />
-                </Flex>
-              </Flex>
-            </Flex>
-          </Box>
+          {subModules.map((submodule) => (
+            <StackCheckboxChildren title={submodule.title} />
+          ))}
         </AccordionPanel>
       </AccordionItem>
     </Accordion>
   );
 };
-
+/**
+ *  <Flex
+            justifyContent="space-between"
+            alignItems="center"
+            w="100%"
+            h="50px"
+          >
+            <Box w="20%">
+              <Flex>
+                <h4>Sub modulo 1</h4>
+              </Flex>
+            </Box>
+            <Flex justifyContent="space-between" w="80%">
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+            </Flex>
+          </Flex>
+          <Flex
+            justifyContent="space-between"
+            alignItems="center"
+            w="100%"
+            h="50px"
+          >
+            <Box w="20%">
+              <Flex>
+                <h4>Sub modulo 2</h4>
+              </Flex>
+            </Box>
+            <Flex justifyContent="space-between" w="80%">
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+            </Flex>
+          </Flex>
+          <Flex
+            justifyContent="space-between"
+            alignItems="center"
+            w="100%"
+            h="50px"
+          >
+            <Box w="20%">
+              <Flex>
+                <h4>Sub modulo 3</h4>
+              </Flex>
+            </Box>
+            <Flex justifyContent="space-between" w="80%">
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+              <Flex justifyContent="flex-start" w="15%">
+                <AppCheckBox isCheked={true} handleChange={() => {}} />
+              </Flex>
+            </Flex>
+          </Flex>
+ */
 export default StackCheckboxParent;
