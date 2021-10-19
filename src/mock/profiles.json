@@ -1,0 +1,376 @@
+{
+  "modules": [
+    {
+      "id": "1",
+      "name": "Análise",
+      "boxes": [
+        {
+          "id": "1",
+          "checked": false
+        },
+        {
+          "id": "2",
+          "checked": false
+        },
+        {
+          "id": "3",
+          "checked": false
+        },
+        {
+          "id": "4",
+          "checked": false
+        },
+        {
+          "id": "5",
+          "checked": false
+        }
+      ],
+      "submodules": [
+        {
+          "id": "1",
+          "name": "Análise de contas",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Análise de transações",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Contas",
+      "boxes": [
+        {
+          "id": "1",
+          "checked": false
+        },
+        {
+          "id": "2",
+          "checked": false
+        },
+        {
+          "id": "3",
+          "checked": false
+        },
+        {
+          "id": "4",
+          "checked": false
+        },
+        {
+          "id": "5",
+          "checked": false
+        }
+      ],
+      "submodules": [
+        {
+          "id": "3",
+          "name": "Cliente",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "name": "Transações",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "name": "Contas digitais",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Customização",
+      "boxes": [
+        {
+          "id": "1",
+          "checked": false
+        },
+        {
+          "id": "2",
+          "checked": false
+        },
+        {
+          "id": "3",
+          "checked": false
+        },
+        {
+          "id": "4",
+          "checked": false
+        },
+        {
+          "id": "5",
+          "checked": false
+        }
+      ],
+      "submodules": [
+        {
+          "id": "6",
+          "name": "Limites e horários",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "name": "Tarífas",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "name": "Tarífas personalizadas",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "name": "Conta",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Financeiro",
+      "boxes": [
+        {
+          "id": "1",
+          "checked": false
+        },
+        {
+          "id": "2",
+          "checked": false
+        },
+        {
+          "id": "3",
+          "checked": false
+        },
+        {
+          "id": "4",
+          "checked": false
+        },
+        {
+          "id": "5",
+          "checked": false
+        }
+      ],
+      "submodules": [
+        {
+          "id": "9",
+          "name": "Entradas",
+          "boxes": [
+            {
+              "id": "1",
+              "checked": false
+            },
+            {
+              "id": "2",
+              "checked": false
+            },
+            {
+              "id": "3",
+              "checked": false
+            },
+            {
+              "id": "4",
+              "checked": false
+            },
+            {
+              "id": "5",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

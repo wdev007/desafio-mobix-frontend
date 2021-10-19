@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import AppCheckBox from "../../../../../shared/components/checkbox";
+import ProfilesCheckedsContext from "../../../contexts/profilesCheckeds";
 
 const StackCheckboxRoot = () => {
+  const { selectAll, features } = useContext(ProfilesCheckedsContext);
   return (
     <>
       <Flex justifyContent="space-between" w="100%" padding="0 16px">
@@ -50,7 +52,15 @@ const StackCheckboxRoot = () => {
           </Text>
         </Box>
         <Flex justifyContent="space-between" w="80%">
-          <Flex justifyContent="flex-start" w="15%">
+          {features.map((item) => (
+            <Flex justifyContent="flex-start" w="15%">
+              <AppCheckBox
+                isCheked={item.checked}
+                handleChange={() => selectAll(item.id, item.checked)}
+              />
+            </Flex>
+          ))}
+          {/* <Flex justifyContent="flex-start" w="15%">
             <AppCheckBox isCheked={true} handleChange={() => {}} />
           </Flex>
           <Flex justifyContent="flex-start" w="15%">
@@ -61,10 +71,7 @@ const StackCheckboxRoot = () => {
           </Flex>
           <Flex justifyContent="flex-start" w="15%">
             <AppCheckBox isCheked={true} handleChange={() => {}} />
-          </Flex>
-          <Flex justifyContent="flex-start" w="15%">
-            <AppCheckBox isCheked={true} handleChange={() => {}} />
-          </Flex>
+          </Flex> */}
         </Flex>
       </Flex>
     </>
